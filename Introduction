@@ -1,0 +1,14 @@
+DBMS stands for Database Management System.
+It further can be divided into two categories:
+    i) Database
+          a) Structured (Relation - RDBMS)
+          b) unstructured
+    ii) DBMS (operations)
+      - SQL
+      - Oracle
+      - MySQL
+
+Advantages of DBMS:
+  Searching is efficient .
+  Attributes (meta data) don't need .  // meta data - data about data 
+  Concurrency in data (multiple people can access the data at the same time)
