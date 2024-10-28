@@ -8,7 +8,14 @@ It further can be divided into two categories:
       - Oracle
       - MySQL
 
-Advantages of DBMS:
+Advantages of DBMS over File system :
   Searching is efficient .
   Attributes (meta data) don't need .  // meta data - data about data 
   Concurrency in data (multiple people can access the data at the same time)
+  Security
+  Redundancy (Duplicacy)
+
+We use 3-tire architecture nowadays (Client layer/interface , Business layer , Data Source)
+    Scalability and Security are good .
+
+Schema (structure) - Logical representation of data . 
