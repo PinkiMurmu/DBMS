@@ -1,4 +1,5 @@
 DBMS stands for Database Management System.
+Database is a collection of related data.
 
 It further can be divided into two categories:
     i) Database
@@ -19,4 +20,4 @@ Advantages of DBMS over File system :
 We use 3-tire architecture nowadays (Client layer/interface , Business layer , Data Source)
     Scalability and Security are good .
 
-Schema (structure) - Logical representation of data . 
+Schema (structure) - Logical representation of data .
