@@ -1,0 +1,6 @@
+Q. What do you understand by the term SQL ?
+
+  -SQL stands for Structured Query Language .
+  -It uses tables in the form of rows and columns to store data .
+  -SQL is a standard language for storing, manipulating and retrieving data in databases .
+  -SQL lets you access and manipulate databases .
