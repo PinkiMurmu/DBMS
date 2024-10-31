@@ -21,3 +21,5 @@ We use 3-tire architecture nowadays (Client layer/interface , Business layer , D
     Scalability and Security are good .
 
 Schema (structure) - Logical representation of data .
+
+We are using Mysql for data base management .
