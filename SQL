@@ -4,3 +4,6 @@ Q. What do you understand by the term SQL ?
   -It uses tables in the form of rows and columns to store data .
   -SQL is a standard language for storing, manipulating and retrieving data in databases .
   -SQL lets you access and manipulate databases .
+
+SQL is not like other coding languages we learnt so far, it is a database management system. 
+It uses queries to make, delete or performing anything on databases and tables. 
