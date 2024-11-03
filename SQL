@@ -7,3 +7,5 @@ Q. What do you understand by the term SQL ?
 
 SQL is not like other coding languages we learnt so far, it is a database management system. 
 It uses queries to make, delete or performing anything on databases and tables. 
+
+In SQL tables are also known as relations. 
