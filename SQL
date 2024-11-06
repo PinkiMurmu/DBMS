@@ -9,3 +9,6 @@ SQL is not like other coding languages we learnt so far, it is a database manage
 It uses queries to make, delete or performing anything on databases and tables. 
 
 In SQL tables are also known as relations.
+Rows are often called as tuples and columns are called as attributes.
+
+SQL is a non-case sensitive language .
