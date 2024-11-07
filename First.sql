@@ -38,5 +38,13 @@ create table Staff
   branchNo varchar(10));
 
 -- Questionaires
-create database HomeRental;
+select * from Staff;
+
+select staffNo,fName,lName,salary from Staff;
+
+select * from Staff where salary > 10000;
+
+select * from Staff where salary between 20000 and 30000;
+
+select * from Staff where position = 'Manager' and position = 'Supervisor';
 
