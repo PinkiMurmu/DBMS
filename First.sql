@@ -47,3 +47,5 @@ select * from Staff where salary > 10000;
 select * from Staff where salary between 20000 and 30000;
 
 select * from Staff where position = 'Manager' and position = 'Supervisor';
+
+delete database Test;
