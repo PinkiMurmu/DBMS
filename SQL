@@ -12,5 +12,6 @@ In SQL tables are also known as relations.
 Rows are often called as tuples and columns are called as attributes.
 
 SQL is a non-case sensitive language .
-Which means whether you are writing in capital or small doesn't matter. 
+Which means whether you are writing the syntax in capital or small doesn't matter. 
 But the names of tables or columns you need to take care of, whatever way you are writing at first write in that form only.
+The characters and varchar should be written inside colon.
