@@ -48,4 +48,4 @@ select * from Staff where salary between 20000 and 30000;
 
 select * from Staff where position = 'Manager' and position = 'Supervisor';
 
-delete database Test;
+delete database <database_name>;
