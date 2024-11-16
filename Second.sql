@@ -1,3 +1,4 @@
+--Creating and using database
 CREATE DATABASE HomeRental;
 USE HomeRental;
 
