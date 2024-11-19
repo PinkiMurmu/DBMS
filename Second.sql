@@ -80,4 +80,3 @@ CREATE TABLE Registration (
     FOREIGN KEY (branchNo) REFERENCES Branch(branchNo),
     FOREIGN KEY (staffNo) REFERENCES Staff(staffNo)
 );
-
