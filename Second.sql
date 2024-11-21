@@ -3,7 +3,7 @@ CREATE DATABASE HomeRental;
 USE HomeRental;
 
 
---Making tables in the database
+-- Creating tables in the database
 -- Branch Table
 CREATE TABLE Branch (
     branchNo VARCHAR(5) PRIMARY KEY,
