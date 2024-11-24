@@ -1,9 +1,11 @@
 DBMS stands for Database Management System.
-Database is a collection of related data.
+Database is a collection of related data in a format theat can be easily accessed(Digital) .
+A software application used to manage our DB is called DBMS .
 
 It further can be divided into two categories:
     i) Database
-          a) Structured (Relation - RDBMS)
+          a) Structured (Relational - RDBMS) data stored in tables(MySQL) .
+                    - Non-relational -> data not stored in tables(mongoDB) .
           b) unstructured
     ii) DBMS (operations)
       - SQL
@@ -19,7 +21,6 @@ Advantages of DBMS over File system :
 
 We use 3-tire architecture nowadays (Client layer/interface , Business layer , Data Source)
     Scalability and Security are good .
-
 Schema (structure) - Logical representation of data .
 
 We are using Mysql for data base management .
