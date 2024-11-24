@@ -13,8 +13,10 @@ Rows are often called as tuples and columns are called as attributes.
 
 SQL is a non-case sensitive language .
 SQL is a data definition and data manipulation language .
+Data store, data retrive, data manipulate . - Relational data .
 Which means whether you are writing the syntax in capital or small doesn't matter. 
 But the names of tables or columns you need to take care of, whatever way you are writing at first write in that form only.
 The characters and varchar should be written inside single-colon or double-colon.
 
 It is really fun to learn new things when you understand those.
+ 
