@@ -4,8 +4,14 @@ SHOW databases;
 -- To create a database
 CREATE database <database_name>;
 
+--Creating database only if it doesn't exist
+CREATE DATABASE IF NOT EXISTS <database_name>;
+
 -- To use a database 
 use <database_name>;
+
+--To see the tables
+SHOW TABLES;
 
 -- To create a table.. I am doing some of the tasks given in our class
 create table Branch 
@@ -37,6 +43,9 @@ create table Staff
   salary int(10),
   branchNo varchar(10));
 
+--To delete tables
+DROP table <table_name>;
+
 -- Questionaires
 select * from Staff;
 
@@ -48,4 +57,8 @@ select * from Staff where salary between 20000 and 30000;
 
 select * from Staff where position = 'Manager' and position = 'Supervisor';
 
-delete database <database_name>;
+--To delete a database
+drop database <database_name>;
+
+--To delete database if exists
+drop database if exists <database_name>;
