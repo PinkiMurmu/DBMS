@@ -19,4 +19,11 @@ But the names of tables or columns you need to take care of, whatever way you ar
 The characters and varchar should be written inside single-colon or double-colon.
 
 It is really fun to learn new things when you understand those.
- 
+
+Datatypes of the inputs in the tables contains char( which wastes the unused memory of the defined size), varchar (which uses memory as needed), int , float , double, boolean, date, year .
+This also contains signed( negative or ppositive) , unsigned (only positive and increased range)
+
+ Types of SQL commands:
+  DDL: Create, alter, drop
+  DQL: select
+  DML: insert, update, delete
