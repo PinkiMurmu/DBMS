@@ -29,5 +29,5 @@ This also contains signed( negative or ppositive) , unsigned (only positive and 
   DML: insert, update, delete
 
 Columns are said to be keys:
-  1. Primary key
-  2. Foreign key
+  1. Primary key (uniquely identify each row, NOT NULL)
+  2. Foreign key (Refers to the primary key of another table)
