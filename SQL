@@ -31,3 +31,4 @@ This also contains signed( negative or ppositive) , unsigned (only positive and 
 Columns are said to be keys:
   1. Primary key (uniquely identify each row, NOT NULL)
   2. Foreign key (Refers to the primary key of another table)
+    -It is the same column name as it is on one table .
