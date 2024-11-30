@@ -44,3 +44,9 @@ Foreign keys are used to establish and maintain relationships between tables and
 
 Default : sets the default value of a column.
           ( salary INT DEFAULT 25000 ) it will set the default value if nothing has been entered .
+
+Distinct : It will remove the duplicate values from the column.
+
+Clauses :
+    WHERE : condition 
+        - operators used with where clause are arithmatic , comparision and logical .
