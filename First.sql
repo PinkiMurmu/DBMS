@@ -62,3 +62,8 @@ drop database <database_name>;
 
 --To delete database if exists
 drop database if exists <database_name>;
+
+-- How to declare foreign key 
+CREATE TABLE temp(
+  cust_id int,
+  FOREIGN KEY (cust_id) references customer(id));
