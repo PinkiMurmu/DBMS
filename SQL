@@ -33,3 +33,9 @@ Columns are said to be keys:
   2. Foreign key (Refers to the primary key of another table)
     -It is the same column name as it is on one table .
 
+Constraints:
+    NOT NULL - cannot have null value.
+    UNIQUE - all columns are different.
+    PRIMARY KEY - unique and not null but used only for one.
+
+if we are defining composite primary key their combination would be unique and not null. Any one column may have same value combination would not be same.
