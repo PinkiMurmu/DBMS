@@ -39,3 +39,8 @@ Constraints:
     PRIMARY KEY - unique and not null but used only for one.
 
 if we are defining composite primary key their combination would be unique and not null. Any one column may have same value combination would not be same.
+
+Foreign keys are used to establish and maintain relationships between tables and to ensure data integrity.
+
+Default : sets the default value of a column.
+          ( salary INT DEFAULT 25000 ) it will set the default value if nothing has been entered .
