@@ -67,3 +67,16 @@ drop database if exists <database_name>;
 CREATE TABLE temp(
   cust_id int,
   FOREIGN KEY (cust_id) references customer(id));
+
+-- Check constraints
+CREATE TABLE city (
+  id INT PRIMARY KEY ,
+  city VARCHAR(50),
+  age int,
+  constraint age_check check(age>=18 and city='Delhi')); --it won't allow you to enter any age less than 18 and any city other than Delhi.
+
+CREATE TABLE newTab(
+  age INT CHECK (age> 18));
+
+-- Distinct keyword
+select distinct city from student;
