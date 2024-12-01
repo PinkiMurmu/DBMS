@@ -49,4 +49,5 @@ Distinct : It will remove the duplicate values from the column.
 
 Clauses :
     WHERE : condition 
-        - operators used with where clause are arithmatic , comparision and logical .
+        - operators used with where clause are arithmatic , comparision and logical . With where we often use Between, in, and not in operators to compare.
+     LIMIT : sets an upper limit on number of tuples(rows) to be returned.
