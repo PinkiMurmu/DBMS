@@ -80,3 +80,12 @@ CREATE TABLE newTab(
 
 -- Distinct keyword
 select distinct city from student;
+
+--Limit Clause 
+select * from city 
+where city="Mumbai"  -- condition on limit
+limit 3;  -- it will print only first 3 rows
+
+--Order by Clause
+SELECT * FROM city
+order by age ASC; -- DESC for decending order
