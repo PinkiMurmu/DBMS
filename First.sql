@@ -89,3 +89,4 @@ limit 3;  -- it will print only first 3 rows
 --Order by Clause
 SELECT * FROM city
 order by age ASC; -- DESC for decending order
+
