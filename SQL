@@ -52,3 +52,16 @@ Clauses :
         - operators used with where clause are arithmatic , comparision and logical . With where we often use Between, in, and not in operators to compare.
     LIMIT : sets an upper limit on number of tuples(rows) to be returned.
     ORDER BY : To sort in ascending (ASC) or decending (DESC) order.
+
+SQL is base of Relational algebra.
+Relational algebra has some basic operations:
+  Projection (We use it at the last of all)- Works on columns.
+  Selection -Works on Rows.
+  Cross Product
+  Union * (Set theory use[*])
+  Rename
+  Set difference *
+Derived operations:
+  Join (Important)
+  Intersect *
+  Division
