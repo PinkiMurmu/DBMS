@@ -90,3 +90,7 @@ limit 3;  -- it will print only first 3 rows
 SELECT * FROM city
 order by age ASC; -- DESC for decending order
 
+-- Practice Question
+select mode, count(customer)
+from Payment
+group by mode;
