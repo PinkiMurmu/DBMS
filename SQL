@@ -51,7 +51,7 @@ Clauses :
     WHERE : condition 
         - operators used with where clause are arithmatic , comparision and logical . With where we often use Between, in, and not in operators to compare.
     LIMIT : sets an upper limit on number of tuples(rows) to be returned.
-    ORDER BY : To sort in ascending (ASC) or decending (DESC) order.
+    ORDER BY : To sort in ascending (ASC) by default or decending (DESC) order.
     GROUP BY : Group rows that have the same values into summary rows.
 
 SQL is base of Relational algebra.
