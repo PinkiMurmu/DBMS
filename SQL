@@ -53,6 +53,7 @@ Clauses :
     LIMIT : sets an upper limit on number of tuples(rows) to be returned.
     ORDER BY : To sort in ascending (ASC) by default or decending (DESC) order.
     GROUP BY : Group rows that have the same values into summary rows.
+    HAVING : Used when we want to apply any condition after grouping.
 
 SQL is base of Relational algebra.
 Relational algebra has some basic operations:
@@ -73,3 +74,15 @@ Aggregate Functions:- Aggregate functions perform a calculation on a set of valu
   MIN()
   SUM()
   AVG()
+
+General Order for writing query:
+SELECT column(s)
+FROM table_name
+WHERE condition     --where applies on rows
+GROUP BY column(s)
+HAVING condition     --having applies on groups
+ORDER BY column(s) ASC;
+
+Table related queries:
+  UPDATE : To update an existing row.
+  DELETE : To delete an existing row.
