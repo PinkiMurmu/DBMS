@@ -94,3 +94,4 @@ order by age ASC; -- DESC for decending order
 select mode, count(customer)
 from Payment
 group by mode;
+
