@@ -86,3 +86,4 @@ ORDER BY column(s) ASC;
 Table related queries:
   UPDATE : To update an existing row.
   DELETE : To delete an existing row.
+
