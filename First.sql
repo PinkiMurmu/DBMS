@@ -95,3 +95,15 @@ select mode, count(customer)
 from Payment
 group by mode;
 
+-- Practice
+-- To change a column name 
+alter table client 
+change telNo phoneNo varchar(20);
+
+-- To delete a column
+alter table client 
+drop column lName;
+
+-- To delete rows of certain condition
+delete from client 
+where maxRent<500;
