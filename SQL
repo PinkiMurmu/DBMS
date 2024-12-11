@@ -41,6 +41,10 @@ Constraints:
 if we are defining composite primary key their combination would be unique and not null. Any one column may have same value combination would not be same.
 
 Foreign keys are used to establish and maintain relationships between tables and to ensure data integrity.
+Cascading for FK:
+  On delete cascade: If we are deleting from the parent table then it will delete from the child table also.
+  on update cascade: If we are updating in the parent table then in the child table also it will be updated.
+        -- Cascading are written after the declaration of foreign key.
 
 Default : sets the default value of a column.
           ( salary INT DEFAULT 25000 ) it will set the default value if nothing has been entered .
@@ -86,4 +90,11 @@ ORDER BY column(s) ASC;
 Table related queries:
   UPDATE : To update an existing row.
   DELETE : To delete an existing row.
-
+  ALTER : To change the schema[design(columns,datatypes,constraints)].
+    - ADD COLUMN (to add columns)
+    - DROP COLUMN (to drop a column)
+    - RENAME TO (to rename the table)
+    - CHANGE COLUMN (to change a column name and type)
+    - MODIFY (to modify the previous column datatype or constraint)
+  TRUNCATE : To delete table's data , the table will remain. 
+  DROP : To delete the whole table.
