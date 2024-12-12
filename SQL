@@ -98,3 +98,4 @@ Table related queries:
     - MODIFY (to modify the previous column datatype or constraint)
   TRUNCATE : To delete table's data , the table will remain. 
   DROP : To delete the whole table.
+
