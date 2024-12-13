@@ -99,3 +99,6 @@ Table related queries:
   TRUNCATE : To delete table's data , the table will remain. 
   DROP : To delete the whole table.
 
+
+
+Joins in sql: Join is used to combine rows from two or more tables, based on a related column between them. To collect common element details from them.
