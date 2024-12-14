@@ -122,3 +122,37 @@ select column(s)
 from tableA
 left join tableB
 on tableA.col_name = tableB.col_name;
+
+--Right join
+select column(s)
+from tableA
+right join tableB
+on tableA.col_name = tableB.col_name;
+
+--To perform full join in mysql we would use union statement (left join union right join)
+-- Full join
+select * form tableA as S
+left join tableB as C
+on S.col_name = C.col_name
+union
+select * from tableA as  A
+right join tableB as B
+on A.col_name = B.col_name;
+
+--Left exclusive join
+select * from tableA as A
+left join tableB as B
+on A.col_name = B.col_name
+where B.col_name is null;
+
+--Right exclusive join
+select * from tableA as A
+right join tableB as B
+on A.col_name = B.col_name
+where A.col_name is null;
+
+--Seif join
+select column(s)
+from tableA as A
+join tableB as B
+on A.col_name = B.col_name;
