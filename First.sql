@@ -107,3 +107,18 @@ drop column lName;
 -- To delete rows of certain condition
 delete from client 
 where maxRent<500;
+
+--Preforming joins on tables
+--Inner join
+select column(s)
+from tableA as S -- Alias(alternate name)
+inner join tableB as C
+in S.col_name = C.col_name; --col_name of both the tables are having same kind of data .
+
+-- This will return all the rows from both the tables
+
+--Left join
+select column(s)
+from tableA
+left join tableB
+on tableA.col_name = tableB.col_name;
