@@ -102,3 +102,10 @@ Table related queries:
 
 
 Joins in sql: Join is used to combine rows from two or more tables, based on a related column between them. To collect common element details from them.
+To perform join operation on two tables it is not compulsory to have a foreign key constraint. We can perform it where there are similar information.
+There are multiple types of joins :
+    -Inner join -> It returns records that have matching values in two tables.
+    -Outer join :
+        -Left join -> It returns records of the first table and the common elements among both the tables.
+        -Right join -> It returns records of the second table and the common elements among both the table.
+        -Full join -> It returns records of the union combined of both the tables.
