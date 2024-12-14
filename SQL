@@ -106,6 +106,6 @@ To perform join operation on two tables it is not compulsory to have a foreign k
 There are multiple types of joins :
     -Inner join -> It returns records that have matching values in two tables.
     -Outer join :
-        -Left join -> It returns records of the first table and the common elements among both the tables.
-        -Right join -> It returns records of the second table and the common elements among both the table.
-        -Full join -> It returns records of the union combined of both the tables.
+        -Left join -> It returns all records from the left table and the matched records from the right table.
+        -Right join -> It returns all records form the right table and the matched records from the left table.
+        -Full join -> It returns all records when there is a match in either left or right table.
