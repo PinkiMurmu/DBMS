@@ -111,3 +111,4 @@ There are multiple types of joins :
         -Full join -> It returns all records when there is a match in either left or right table.
 
     -Self join ->It is a regular join but the table is joined with itself.
+
