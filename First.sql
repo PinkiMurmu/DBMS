@@ -156,3 +156,4 @@ select column(s)
 from table as A
 join table as B        --We are using same table here.
 on A.col_name = B.col_name;
+
