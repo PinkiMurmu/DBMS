@@ -118,3 +118,11 @@ To use it:
   every SELECT should have same no. of columns .
   columns must have similar data types .
   columns in every SELECT should be in same order .
+We use unions generally to perform full join on different tables .
+
+SQL Sub Query :
+  - A subquery or inner query or a nested query is a query within another SQL query . It involves 2 select statement .
+There are 3 ways of writing a sub query:
+    - inside Select
+    - inside From
+    - inside Where 
