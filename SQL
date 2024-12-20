@@ -112,3 +112,9 @@ There are multiple types of joins :
 
     -Self join ->It is a regular join but the table is joined with itself.
 
+Union - It is used to combine the result-set of two or more SELECT statement . Gives UNIQUE records .
+
+To use it:
+  every SELECT should have same no. of columns .
+  columns must have similar data types .
+  columns in every SELECT should be in same order .
