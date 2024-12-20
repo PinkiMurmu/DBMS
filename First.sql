@@ -157,3 +157,13 @@ from table as A
 join table as B        --We are using same table here.
 on A.col_name = B.col_name;
 
+-- Union
+select column(s) from tableA
+union  -- We may write UNION ALL (it will also give us the duplicates)
+select column(s) from tableB;
+
+-- SQL sub query
+select column(s)
+from table_name
+where col_name operatoe
+(subquery);
