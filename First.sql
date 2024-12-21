@@ -167,3 +167,13 @@ select column(s)
 from table_name
 where col_name operatoe
 (subquery);
+
+select max(marks) from (select *
+from student
+where city = "Delhi") as temp; --Every derived table must have its own alias. Here temp is a derived table which is being extracted from a table.
+
+-- MySQL Views
+create view view1 as 
+select rollno,name from student;
+
+select * from view1;
