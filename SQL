@@ -127,3 +127,8 @@ There are 3 ways of writing a sub query:
     - inside From
     - inside Where 
 Every derived table must have its own alias .
+
+////MySQL Views////
+A view is a virtual table based on the result-set of an SQL statement.
+We can simply delete view just like we delete tables.
+    DROP VIEW view_name;
