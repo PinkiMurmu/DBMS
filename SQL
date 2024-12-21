@@ -126,3 +126,4 @@ There are 3 ways of writing a sub query:
     - inside Select
     - inside From
     - inside Where 
+Every derived table must have its own alias .
