@@ -32,17 +32,6 @@ INSERT INTO Branch values
   ('B004','32 Manse Rd','Bristol','BS99 LNZ'),
   ('B002','56 Clover Dr','London','NW106EU');
 
--- Creating another table
-create table Staff
-  ( staffNo varchar(10) Primary key,
-  fName varchar(10),
-  lName varchar(10),
-  position varchar(15),
-  sex char(1),
-  DOB date,
-  salary int(10),
-  branchNo varchar(10));
-
 --To delete tables
 DROP table <table_name>;
 
