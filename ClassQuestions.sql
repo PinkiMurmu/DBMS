@@ -192,10 +192,10 @@ SELECT city from Branch
 INTERSECT
 SELECT city from PropertyForRent;
 
-#11.List the names and comments of all clients who have viewed a property for rent.
+--11.List the names and comments of all clients who have viewed a property for rent.
 SELECT c.fName,c.lName,v.comment from viewing v,Client c WHERE (v.clientNo = c.clientNo && v.comment IS NOT NULL);
 
-#12 Produce a status report on property viewings
+--12 Produce a status report on property viewings
 SELECT 
     V.clientNo, CONCAT(C.fName, ' ', C.lName) AS clientName, 
     V.propertyNo, P.street, P.city, 
@@ -205,56 +205,56 @@ JOIN Client C ON V.clientNo = C.clientNo
 JOIN PropertyForRent P ON V.propertyNo = P.propertyNo;
 
 
-#13.List complete details of all staff who work at the branch in Glasgow.
+--13.List complete details of all staff who work at the branch in Glasgow.
 SELECT * FROM Staff
 WHERE branchNo = (SELECT branchNo FROM Branch WHERE city = 'Glassgow');
 
-#14 Find all owners with the string 'Glasgow' in their address.
+--14 Find all owners with the string 'Glasgow' in their address.
 SELECT * FROM PrivateOwner WHERE address LIKE '%Glasgow%';
 
-#15 How many properties cost more than £350 per month to rent?
+--15 How many properties cost more than £350 per month to rent?
 SELECT COUNT(*) AS PropertiesAbove350 FROM PropertyForRent
 WHERE rent > 350;
 
-#16 Find the minimum, maximum, and average staff salary.
+--16 Find the minimum, maximum, and average staff salary.
 SELECT 
     MIN(salary), 
     MAX(salary), 
     AVG(salary)
 FROM Staff;
 
-#17 Find the number of staff working in each branch and the sum of their salaries.
+--17 Find the number of staff working in each branch and the sum of their salaries.
 SELECT branchNo, 
     COUNT(*) AS NumberOfStaff, 
     SUM(salary) AS TotalSalary
 FROM Staff
 GROUP BY branchNo;
 
-#18 List the details of all viewings on property PG4 where a comment has not been supplied.
+--18 List the details of all viewings on property PG4 where a comment has not been supplied.
 SELECT * FROM Viewing
 WHERE propertyNo = 'PG4' AND comment IS NULL;
 
-#19 Produce a list of salaries for all staff
+--19 Produce a list of salaries for all staff
 SELECT CONCAT(fName,' ', lName) AS StaffName, salary 
 FROM Staff
 ORDER BY salary DESC;
 
-#20 Produce a list of properties arranged in order of property type. 
+--20 Produce a list of properties arranged in order of property type. 
 SELECT * FROM PropertyForRent
 ORDER BY type;
 
-#21 How many different properties were viewed in May 2004?
+--21 How many different properties were viewed in May 2004?
 SELECT COUNT(DISTINCT propertyNo) AS PropertiesViewedInMay2004 FROM Viewing
 WHERE MONTH(viewDate) = 05 AND YEAR(viewDate) = 2004;
 
-#22 Find the total number of Managers and the sum of their salaries
+--22 Find the total number of Managers and the sum of their salaries
 SELECT 
     COUNT(*) AS TotalManagers, position,
     SUM(salary) AS TotalManagerSalaries
 FROM Staff
 WHERE position = 'Manager';
 
-#23 For each branch office with more than one member of staff, find the number of staff working in each branch and the sum of their salaries.
+--23 For each branch office with more than one member of staff, find the number of staff working in each branch and the sum of their salaries.
 SELECT 
     branchNo,
     COUNT(*) AS StaffCount, 
@@ -263,11 +263,11 @@ FROM Staff
 GROUP BY branchNo
 HAVING COUNT(*) > 1;
 
-#24 List the staff who work in the branch at 163 Main St.
+--24 List the staff who work in the branch at 163 Main St.
 SELECT * FROM Staff
 WHERE branchNo = (SELECT branchNo FROM Branch WHERE street = '163 Main St');
 
-#25 List all staff whose salary is greater than the average salary, and show by how much their salary is greater
+--25 List all staff whose salary is greater than the average salary, and show by how much their salary is greater
 SELECT 
     fName, lName, salary, 
     salary - (SELECT AVG(salary) FROM Staff) AS DeviationSalary
@@ -275,14 +275,14 @@ FROM Staff
 WHERE salary > (SELECT AVG(salary) FROM Staff);
 
 
-#26 List the properties that are handled by staff who work in the branch at 163 Main St.
+--26 List the properties that are handled by staff who work in the branch at 163 Main St.
 SELECT * FROM PropertyForRent
 WHERE staffNo IN (SELECT staffNo FROM Staff 
                   WHERE branchNo = (SELECT branchNo FROM Branch 
                                     WHERE street = '163 Main St')
 );
 
-#27 Find all staff whose salary is larger than the salary of at least one member of staff at branch B003.
+--27 Find all staff whose salary is larger than the salary of at least one member of staff at branch B003.
 SELECT * 
 FROM Staff
 WHERE salary > (
@@ -291,7 +291,7 @@ WHERE salary > (
     WHERE branchNo = 'B003'
 );
 
-#27(another Way)
+--27(another Way)
 SELECT * 
 FROM Staff
 WHERE salary > ANY (
@@ -300,22 +300,22 @@ WHERE salary > ANY (
     WHERE branchNo = 'B003'
 );
 
-#28 Find all staff whose salary is larger than the salary of every member of staff at branch B003.
+--28 Find all staff whose salary is larger than the salary of every member of staff at branch B003.
 SELECT staffNo,fName,lName 
 FROM Staff
 WHERE salary > (SELECT MAX(salary) FROM Staff WHERE branchNo = 'B003');
 
-#29
-#Same as Q.11
+--29
+--Same as Q.11
 
-#30,31 For each branch, list the numbers and names of staff who manage properties, including the city in which the branch is located and the properties that the staff manage. 
+--30,31 For each branch, list the numbers and names of staff who manage properties, including the city in which the branch is located and the properties that the staff manage. 
 SELECT 
     b.branchNo, b.city, s.staffNo, s.fName, s.lName, p.propertyNo
 FROM Branch b
 JOIN Staff s ON b.branchNo = s.branchNo
 JOIN PropertyForRent p ON s.staffNo = p.staffNo;
 
-#32 Find the number of properties handled by each staff member.
+--32 Find the number of properties handled by each staff member.
 SELECT staffNo, COUNT(propertyNo) AS PropertiesHandled
 FROM PropertyForRent
 GROUP BY staffNo
