@@ -119,7 +119,9 @@ right join tableB
 on tableA.col_name = tableB.col_name;
 
 --To perform full join in mysql we would use union statement (left join union right join)
--- Full join
+-- Full join/Full outer join   
+-- A full join, also known as a full outer join, is an SQL operation that returns all records from two tables, including matches and non-matches.
+
 select * form tableA as S
 left join tableB as C
 on S.col_name = C.col_name
