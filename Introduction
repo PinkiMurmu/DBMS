@@ -24,3 +24,6 @@ We use 3-tire architecture nowadays (Client layer/interface , Business layer , D
 Schema (structure) - Logical representation of data .
 
 We are using Mysql for data base management .
+
+Q. Among select, from and where what is the execution series ?
+Ans- From - Where - Select
