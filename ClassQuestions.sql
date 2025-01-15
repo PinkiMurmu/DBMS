@@ -397,3 +397,78 @@ SELECT * FROM viewing;
 DELETE FROM viewing
 WHERE propertyNo IS NOT NULL;
 SELECT * FROM viewing;
+
+
+#Extras
+
+#1
+SELECT branchNo, position, salary FROM Staff s
+	WHERE salary = (
+         SELECT MAX(salary) FROM Staff
+         WHERE branchNo = s.branchNo AND salary < (SELECT MAX(salary) FROM Staff 
+         WHERE branchNo = s.branchNo))
+     ORDER BY branchNo;
+     
+#2.
+SELECT s.branchNo, s.position, s.salary, r.dateJoined
+FROM Staff s
+JOIN Registration r ON s.staffNo = r.staffNo
+WHERE s.salary = (SELECT MAX(salary) FROM Staff WHERE branchNo = s.branchNo);
+     
+#3.
+SELECT p.propertyNo, p.staffNo, p.branchNo, v.comment
+FROM PropertyForRent p
+JOIN Viewing v ON p.propertyNo = v.propertyNo;
+     
+#4.
+SELECT branchNo, staffNo, fName, lName, position
+FROM Staff
+ORDER BY branchNo, staffNo;
+
+#5.
+alter table Staff  Add Location VARCHAR(20);
+UPDATE Staff SET Location = 'Paris'
+where staffNo = 'SL21' or Staffno = 'SA9';
+UPDATE Staff SET Location = 'London'
+where staffNo = 'SL41' or Staffno = 'SG14';
+UPDATE Staff SET Location = 'Glasgow'
+where staffNo = 'SG5' or Staffno = 'SG37';
+
+select * from Staff;
+
+#6.
+SELECT 
+        S.staffNo, 
+        S.fName, 
+        S.lName, 
+        S.position, 
+        S.Location, 
+        B.branchNo, 
+        B.city
+    FROM Staff S
+    JOIN Branch B 
+    ON S.branchNo = B.branchNo
+    WHERE S.Location = B.city;
+    
+#7. 
+SELECT P.rooms, P.type, P.rent, P.propertyNo, P.city AS property_city, 
+P.branchNo, B.city AS branch_city
+FROM PropertyForRent P
+JOIN Branch B ON P.branchNo = B.branchNo
+WHERE P.postcode = B.postcode;
+
+#8. 
+SELECT PO.ownerNo, PO.fName, PO.lName, PO.address, PO.telNo, 
+COUNT(P.propertyNo) AS property_count
+FROM PrivateOwner PO JOIN PropertyForRent P 
+ON PO.ownerNo = P.ownerNo
+GROUP BY PO.ownerNo, PO.fName, PO.lName, PO.address, PO.telNo
+ORDER BY property_count DESC LIMIT 1;
+
+#9. 
+select * from client
+where fName like "m%";
+
+#10.
+select * from Privateowner
+where length(fname) = 3;
