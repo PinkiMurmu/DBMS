@@ -7,7 +7,7 @@ It further can be divided into two categories:
           a) Structured (Relational - RDBMS) data stored in tables(MySQL) .
                     - Non-relational -> data not stored in tables(mongoDB) .
           b) unstructured
-    ii) DBMS (operations)
+    ii) DBMS (operations) 
       - SQL
       - Oracle
       - MySQL
