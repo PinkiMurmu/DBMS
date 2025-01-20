@@ -98,6 +98,9 @@ delete from client
 where maxRent<500;
 
 --Preforming joins on tables
+--Joins are the results of cross product of two table and with that some conditions are to be applied.
+
+
 --Inner join
 select column(s)
 from tableA as S -- Alias(alternate name)
